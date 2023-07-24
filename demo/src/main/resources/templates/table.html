@@ -31,7 +31,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/">Add Employee</a>
+            <a class="nav-link active" href="#">Add Employee</a>
           </li>
         </ul>
       </div>
@@ -59,13 +59,13 @@
           <th scope="col">Contact</th>
           <th scope="col">Govt_id_Type</th>
           <th scope="col">Govt_id_Number</th>
-          <th scope="col">Govt_id_Vaccine</th>
+          <th scope="col">Vaccine</th>
           
 
         </tr>
       </thead>
       <tbody>
-        <form action="/" method="get">
+        <form action="/Welcome" method="get">
           <tr th:each="record:${records}">
             <td th:text="${record.id}"></td>
             <td th:text="${record.Name}"></td>

@@ -15,21 +15,15 @@ import com.example.demo.Service.covidService;
 
 @Controller
 public class covidController {
-
-   
     covidService ser;
 
    
     @GetMapping("/")
     public String home() {
-        return "table";
-    }
-
-     @GetMapping("/form")
-    public String home2() {
         return "form";
     }
 
+ 
     @PostMapping("/Welcome")
     public String welcome (@ModelAttribute User user, Model model) {
         // System.out.println(User.toString());
@@ -38,8 +32,7 @@ public class covidController {
         List<User> records = ser.getAll();
         model.addAttribute("records", records);
      
-        //System.out.println("Hello spring"); <-(just for testing)
-        return "form";
+        return "table";
     }
     
 }

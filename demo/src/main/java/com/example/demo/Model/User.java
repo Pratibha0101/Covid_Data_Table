@@ -9,17 +9,13 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="covid_entry")
 public class User {
-    @Override
-    public String toString() {
-        return "User [id=" + id + ", Name=" + Name + ", Contact=" + Contact + ", Govt_id_Type=" + Govt_id_Type
-                + ", Govt_id_Number=" + Govt_id_Number + ", Vaccine=" + Vaccine + "]";
-    }
+   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String Name;
-    private String Contact;;
+    private String Contact;
     private String Govt_id_Type;
     private int Govt_id_Number;
     private String Vaccine;
@@ -59,7 +55,11 @@ public class User {
     public void setVaccine(String vaccine) {
         Vaccine = vaccine;
     }
-
+ @Override
+    public String toString() {
+        return "User [id=" + id + ", Name=" + Name + ", Contact=" + Contact + ", Govt_id_Type=" + Govt_id_Type
+                + ", Govt_id_Number=" + Govt_id_Number + ", Vaccine=" + Vaccine + "]";
+    }
 
     
 }
