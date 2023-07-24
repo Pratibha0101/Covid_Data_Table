@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vod.css">
+</head>
+
+<body style="background-color: rgb(243, 166, 138);">
+    <header style="font-size: 30px;">Form to get entry in Employee Database</header>
+    <section>
+        <center><form action="/form" method="post">
+            <table>
+                <tr>
+                <td>
+                    <tr>Name</tr>
+                   <input type="text" placeholder="Name" name="Name"> 
+                    <br>
+                    <tr>Contact</tr>
+                    <input type="text" placeholder="Contact" name="Contact">
+                    <br>
+                    <tr>Govt_id_Type</tr>
+                    <input type="text" placeholder="idType" name="Govt_id_Type">
+                    <br>
+                    <tr>Govt_id_Number</tr>
+                    <input type="text" placeholder="Govt_id_Number" name="Govt_id_Number">
+                    <br>
+                    
+                    
+                </td>
+            </tr>
+
+                <br>
+                <input type="submit">
+            </table>
+        </form></center>
+    </section>
+</body>
+
+</html>
